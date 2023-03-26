@@ -42,4 +42,8 @@ ___
    ```
 2. In this case, operations with letters("min") have lower precesion than other operations("+").
 3. In Java we need .equal() method to compare equivalence and == only compares identity, but == in scala is same as .equal().
-4. 
+
+### Lambda Expressions
+
+1. We use symbol "=>" reads rocket.
+2. 
