@@ -3,8 +3,8 @@
  */
 object HelloWorld{
 
-  val foo:Int = 123
-  val dummy = "123"
+  val value:Int = 123
+  val name = "Obi-Wan"
   var age = 23
   age += 1
   // String, Int, Char, Boolean, Double, Unit
@@ -14,11 +14,16 @@ object HelloWorld{
   // Another way is:
   println(t._1)
 
+  val message = f"${name} is ${age} years old."
+
+  name == "Obi-Wan" * 5
+
   /**
    * The main function that prints Hello World
    * @param args the arguments to this application
    */
   def main(args: Array[String]): Unit = {
     println("Hello World")
+    println(message)
   }
 }

@@ -1,6 +1,12 @@
-# Scala Notes
+[//]: # (<span style = "font-family: dejavu">)
 
-The lectures come from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&list=PLLMXbkbDbVt8JLumqKj-3BlHmEXPIfR42&index=1)
+[//]: # (# Scala Notes)
+
+[//]: # (</span>)
+# Scala Notes
+___
+
+*The lectures come from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&list=PLLMXbkbDbVt8JLumqKj-3BlHmEXPIfR42&index=1)*
 
 ### Getting started
 
@@ -8,7 +14,17 @@ The lectures come from [Mark Lewis's YouTube Channel](https://www.youtube.com/wa
     * object
     * class
     * tree
-
-2. It would be better to match the object name with filename
-
+2. It would be better to match the object name with filename.
 3. When something returns no information, use unit. Java uses void and returns actually nothing.
+
+### Variables and Types
+
+1. There are two kinds of variables in scala:
+   * val
+   * var
+2. The difference between val and var the ability to make assignments. val is a finial assignment and cant be reassigned with other values while var can.
+3. THerefore val is preferred to simplify the logic.
+4. A variable can just be simply declared or defined type.
+5. Some basic types in scala: Int, Double, Char, Sting, Boolean, Unit.
+6. Tuple starts at one instead of zero.
+7. 
