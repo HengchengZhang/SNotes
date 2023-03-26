@@ -46,4 +46,7 @@ ___
 ### Lambda Expressions
 
 1. We use symbol "=>" reads rocket.
-2. 
+
+### If and While
+
+1. If "if" is used in an expression, the result can lead to the variable become type "any", which needs to be avoided.

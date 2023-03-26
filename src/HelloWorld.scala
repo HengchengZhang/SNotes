@@ -28,6 +28,21 @@ object HelloWorld {
   val twice: Double => Double = _ * 2
   val lt: (Double, Double) => Boolean = _ < _
 
+  // Simple loop
+  var i = 0
+  while (i < 5) {
+    i += 1
+  }
+
+  // Scala like condition
+  val response = if (age < 18) {
+    "Banned!"
+  } else {
+    "Welcome!"
+  }
+
+  println(if (age < 18) "Banned!" else "Welcome!")
+
   /**
    * The main function that prints Hello World
    *
