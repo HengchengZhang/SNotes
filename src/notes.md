@@ -63,3 +63,7 @@ ___
 
 ### try/catch
 
+### Declarations and Scope
+
+### Libraries and Standard Input
+
