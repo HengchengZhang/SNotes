@@ -175,5 +175,10 @@ ___
 ### Strings as Collections
 
 1. Of course String can usually(always?) be treated as a collection of Chars.
-2. String can also be splitted by RegEx(Yea that's what we want).
+2. String can also be splitted by RegEx(Yeah that's what we want).
+
+### Lists, Recursion and Patterns
+
+1. Nil is used as empty List.
+2. x:xs in Haskell can be expressed as h::t in Scala.
 
