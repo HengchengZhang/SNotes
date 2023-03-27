@@ -67,3 +67,8 @@ ___
 
 ### Libraries and Standard Input
 
+### Arrays and Lists
+
+1. Array is mutable and List is not. This means the items in Arrays can be modified(not reassigned) and List is final.
+2. When you add a new item to a List, the original List wont change, instead you will get a new List with the item added.
+
