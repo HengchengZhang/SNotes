@@ -13,7 +13,7 @@ ___
 1. The top level can only have one of the three things:
     * object
     * class
-    * tree
+    * trait
 2. It would be better to match the object name with filename.
 3. When something returns no information, use unit. Java uses void and returns actually nothing.
 
@@ -224,3 +224,6 @@ ___
 
 1. Currying is the ability to apply arguments one at a time.
 2. Didn't quite understand pass-by-name currently.
+
+### Object-Orientation and Classes
+
