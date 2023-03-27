@@ -71,4 +71,23 @@ ___
 
 1. Array is mutable and List is not. This means the items in Arrays can be modified(not reassigned) and List is final.
 2. When you add a new item to a List, the original List wont change, instead you will get a new List with the item added.
+   ```
+   List[Char] = List(a, b, c)
+   Array[Int] = Array(1, 2, 3)
+   ```
+
+### fill and tabulate
+
+1. The second argument in fill is the argument you want it to fits.
+   ```
+   List.fill(100)(math.random)
+   List.fill(5)(io.StdIn.readLine)
+   ```
+2. We can use tabulate if we need an Array with each value equals to its index.
+   ```
+   Array.tabulate(10)(i => i * i)
+   // This will return an array with 20 zeros
+   new Array[Int](20)
+   ```
+3. The second method is not recommended because when it has type String, this will return null and null will lead to errors.
 

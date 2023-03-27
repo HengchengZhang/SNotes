@@ -76,7 +76,7 @@ object HelloWorld {
   }
   println(num)
 
-
+  List.fill(100)(math.random())
 
 
   /**
