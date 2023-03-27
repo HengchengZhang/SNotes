@@ -108,6 +108,20 @@ ___
    10 to 1 by -1
    ```
 
+1. Some examples:
+   ```scala
+   1 to 10
+   1.to(10)
+   'a' to 'z'
+   // Only return the odd values
+   1 to 10 by 2
+   // This is not well defined
+   1.0 to 10.0
+   // This is cool
+   1.0 to 10.0 by 1.0
+   // Back counting is also cool
+   10 to 1 by -1
+   ```
 ### Basic Sequence Methods
 
 1. The following methods work on Lists, since List is immutable, changing itself will make it mutable.
