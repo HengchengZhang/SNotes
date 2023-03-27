@@ -23,6 +23,8 @@ object Libraries {
     val lst = buildList()
     println(myConcat(lst))
 
+    grade(List(1, 2), List(4, 3))
+
 
   }
 
@@ -35,6 +37,10 @@ object Libraries {
   def myConcat(words: List[String]): String = words match {
     case Nil => ""
     case x :: xs => x + " " + myConcat(xs)
+  }
+
+  def grade(quizzes: List[Int], assignments: List[Int], tests: List[Int] = Nil): Unit = {
+    println("Hi.")
   }
 
 }
