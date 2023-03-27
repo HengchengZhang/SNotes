@@ -33,7 +33,7 @@ ___
 ### Statements and Expressions
 
 1. Some binary oprations can use inline commands
-   ```
+   ```scala
    val a:Int = 1
    var b:Int = 2
    // These are equivalent expressions
@@ -54,7 +54,7 @@ ___
 ### for Loops/Comprehensions
 
 1. "<-" reads in.
-2. "to" means leq, "until" means lt.
+2. "to" is inclusive at the highend, "until" is exclusive at the highend.
 3. Conditions can be added in for loops.
 
 ### Match Expresstion
@@ -71,7 +71,7 @@ ___
 
 1. Array is mutable and List is not. This means the items in Arrays can be modified(not reassigned) and List is final.
 2. When you add a new item to a List, the original List wont change, instead you will get a new List with the item added.
-   ```
+   ```scala
    List[Char] = List(a, b, c)
    Array[Int] = Array(1, 2, 3)
    ```
@@ -79,15 +79,31 @@ ___
 ### fill and tabulate
 
 1. The second argument in fill is the argument you want it to fits.
-   ```
+   ```scala
    List.fill(100)(math.random)
    List.fill(5)(io.StdIn.readLine)
    ```
 2. We can use tabulate if we need an Array with each value equals to its index.
-   ```
+   ```scala
    Array.tabulate(10)(i => i * i)
    // This will return an array with 20 zeros
    new Array[Int](20)
    ```
 3. The second method is not recommended because when it has type String, this will return null and null will lead to errors.
 
+### Range
+
+1. Some examples:
+   ```scala
+   1 to 10
+   1.to(10)
+   'a' to 'z'
+   // Only return the odd values
+   1 to 10 by 2
+   // This is not well defined
+   1.0 to 10.0
+   // This is cool
+   1.0 to 10.0 by 1.0
+   // Back counting is also cool
+   10 to 1 by -1
+   ```
