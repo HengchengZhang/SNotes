@@ -49,7 +49,8 @@ object HelloWorld {
     j <- 'a' to 'c'
     sqr = i * i
   } yield {
-    i -> j
+    // -> seems like .append()
+    i -> j -> sqr
   }
   println(stuff)
 
