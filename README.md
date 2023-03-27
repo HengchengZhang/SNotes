@@ -6,4 +6,6 @@ Based on [lectures](https://www.youtube.com/watch?v=85bHg5AipvU&list=PLLMXbkbDbV
 
 IDE: IntelliJ
 
-sdk version: 2.13
+jdk version: 15.0.2
+
+scala-sdk version: 2.13.10
