@@ -27,4 +27,43 @@ ___
 4. A variable can just be simply declared or defined type.
 5. Some basic types in scala: Int, Double, Char, Sting, Boolean, Unit.
 6. Tuple starts at one instead of zero.
-7. 
+
+### String Interpolation
+
+### Statements and Expressions
+
+1. Some binary oprations can use inline commands
+   ```
+   val a:Int = 1
+   var b:Int = 2
+   // These are equivalent expressions
+   a.min(b)
+   a min b
+   ```
+2. In this case, operations with letters("min") have lower precesion than other operations("+").
+3. In Java we need .equal() method to compare equivalence and == only compares identity, but == in scala is same as .equal().
+
+### Lambda Expressions
+
+1. We use symbol "=>" reads rocket.
+
+### If and While
+
+1. If "if" is used in an expression, the result can lead to the variable become type "any", which needs to be avoided.
+
+### for Loops/Comprehensions
+
+1. "<-" reads in.
+2. "to" means leq, "until" means lt.
+3. Conditions can be added in for loops.
+
+### Match Expresstion
+
+1. Just like Haskell
+
+### try/catch
+
+### Declarations and Scope
+
+### Libraries and Standard Input
+

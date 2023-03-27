@@ -1,3 +1,5 @@
+package basics
+
 /**
  * Created HelloWorld object in scala
  */
