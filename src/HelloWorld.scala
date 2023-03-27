@@ -65,6 +65,16 @@ object HelloWorld {
       }
     }
 
+  val str = "123"
+  val num = try {
+    str.toInt
+  } catch {
+    case ex: NumberFormatException => 0
+      println(ex)
+  }
+  println(num)
+
+
   /**
    * The main function that prints Hello World
    *

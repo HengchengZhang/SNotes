@@ -60,3 +60,6 @@ ___
 ### Match Expresstion
 
 1. Just like Haskell
+
+### try/catch
+
