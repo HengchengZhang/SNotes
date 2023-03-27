@@ -50,3 +50,10 @@ ___
 ### If and While
 
 1. If "if" is used in an expression, the result can lead to the variable become type "any", which needs to be avoided.
+
+### for Loops/Comprehensions
+
+1. "<-" reads in.
+2. "to" means leq, "until" means lt.
+3. Conditions can be added in for loops.
+4. 

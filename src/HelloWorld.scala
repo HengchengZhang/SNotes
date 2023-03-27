@@ -43,6 +43,17 @@ object HelloWorld {
 
   println(if (age < 18) "Banned!" else "Welcome!")
 
+  val stuff = for {
+    i <- 0 until 5
+    if i % 3 == 0
+    j <- 'a' to 'c'
+    sqr = i * i
+  } yield {
+    i -> j
+  }
+  println(stuff)
+
+
   /**
    * The main function that prints Hello World
    *
