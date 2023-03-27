@@ -211,3 +211,10 @@ ___
    // Returns None
    ```
    
+### Text Files
+
+1. The Source type returns a cantor collection, which is called an Iterator. Unlike Array or List, an Iterator is consumed when it is used.
+2. A BufferedSource is an iterator of Chars. Use .getLines() in this case.
+3. Remember to close the file after using it.
+4. Before closing the file, all actions need to be finished, otherwise there will be an error.
+

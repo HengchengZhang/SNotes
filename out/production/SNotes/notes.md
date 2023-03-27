@@ -180,4 +180,41 @@ ___
 ### Lists, Recursion and Patterns
 
 1. Nil is used as empty List.
-2. 
+2. x:xs in Haskell can be expressed as h::t in Scala.
+
+### Option
+
+1. Recall that Option is the return type of the .find method
+   ```scala
+   val a = Array(6, 1, 7, 2, 9, 4)
+   val res0 = a.find(_ < 3)
+   // Returns Option[Int] = Some(1)
+   val res1 = a.find(_ > 10)
+   // Returns Option[Int] = None
+   ```
+2. The .get method will return error if there is nothing to return.
+3. Therefore, we can do some pattern matching like Haskell(Here it is)
+   ```scala
+   val res = res0 match {
+   case Some(i) => s"$i"
+   case None => ""
+   }
+   ```
+4. There's other methods to solve this
+   ```scala
+   // Return the default value(0) if it returns nothing
+   res1.getOrElse(0)
+   // map will not return error for None
+   res0.map(_ * 2)
+   // Returns Some(2)
+   res1.map(_ * 2)
+   // Returns None
+   ```
+   
+### Text Files
+
+1. The Source type returns a cantor collection, which is called an Iterator. Unlike Array or List, an Iterator is consumed when it is used.
+2. A BufferedSource is an iterator of Chars. Use .getLines() in this case.
+3. Remember to close the file after using it.
+4. Before closing the file, all actions need to be finished, otherwise there will be an error.
+5. 
