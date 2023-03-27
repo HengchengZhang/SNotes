@@ -172,3 +172,8 @@ ___
    ```
 2. Just scroll through the APIs.
 
+### Strings as Collections
+
+1. Of course String can usually(always?) be treated as a collection of Chars.
+2. String can also be splitted by RegEx(Yea that's what we want).
+
