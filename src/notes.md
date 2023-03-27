@@ -109,7 +109,7 @@ ___
    ```
 ### Basic Sequence Methods
 
-1. The following methods work on Lists, since List is immutable, changing itself will make it mutable:
+1. The following methods work on Lists, since List is immutable, changing itself will make it mutable.
    ```scala
    val a = Array(6, 9, 1, 5, 7, 2)
    a.drop(2)
@@ -143,3 +143,32 @@ ___
    a.zip('a' to 'z')
    a.zipWithIndex
    ```
+
+### Higher-Order Sequence Methods
+
+1. When a function takes a function as input and returns another one.
+   ```scala
+   val a = Array(1, 2, 3, 4, 5, 6, 7, 8, 9)
+   a.foreach(println)
+   // Similar map as haskell but returns a new collection type
+   a.map(_ * 2)
+   // Similar filter as haskell
+   a.filter(_ < 5)
+   // Count even values
+   a.count(_ % 2 == 0)
+   // If there exists a valid element
+   a.exists(_ > 10)
+   // If all elements are valid
+   a.forall(_ < 10)
+   // This can return a Monad? and therefore the result can be wried if the element is not present
+   a.find(_ % 4 == 0)
+   // This return two Arrays where one is valid and the other is not
+   a.partition(_ < 5)
+   // Reduce behaves like fold in Haskell
+   a.reduce(_ + _)
+   // minBy
+   val values = Array("this", "is", "dummy", "codes")
+   values.minBy(_.length)
+   ```
+2. Just scroll through the APIs.
+
