@@ -220,3 +220,7 @@ ___
 
 ### Named and Default Arguments
 
+### Currying and Pass-by-Name
+
+1. Currying is the ability to apply arguments one at a time.
+2. Didn't quite understand pass-by-name currently.

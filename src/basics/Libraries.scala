@@ -25,6 +25,10 @@ object Libraries {
 
     grade(List(1, 2), List(4, 3))
 
+    val plus3 = add(3) _
+    val eight = plus3(5)
+
+    val t = threeTuple(math.random())
 
   }
 
@@ -42,5 +46,9 @@ object Libraries {
   def grade(quizzes: List[Int], assignments: List[Int], tests: List[Int] = Nil): Unit = {
     println("Hi.")
   }
+
+  def add(x: Int)(y: Int): Int = x + y
+
+  def threeTuple(a: => Double): (Double, Double, Double) = (a, a, a)
 
 }
