@@ -231,3 +231,9 @@ ___
 
 1. To visit attributes outside a Class, they need to be set as variables.
 
+### Mutability and Private Members
+
+1. In general rules, all mutable data should all be private in Class.
+2. The messy look in addQuiz in ImmutableStudent Class is actually memory efficient. Because reference the new immutable data from the original one doesn't need new memories.
+3. The immutable version is more Scala standard style.
+

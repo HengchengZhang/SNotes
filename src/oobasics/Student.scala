@@ -2,9 +2,9 @@ package oobasics
 
 class Student(val firstName: String,
               val lastName: String,
-              quizzes: List[Int] = Nil,
-              assignments: List[Int] = Nil,
-              tests: List[Int] = Nil) {
+              private var quizzes: List[Int] = Nil,
+              private var assignments: List[Int] = Nil,
+              private var tests: List[Int] = Nil) {
 
   private def findMean(results: List[Int]): Double = {
     results match {
@@ -12,6 +12,8 @@ class Student(val firstName: String,
       case _ => results.sum.toDouble / results.length
     }
   }
+
+  def addQuiz(grade: Int): Unit = quizzes ::= grade
 
   def quizMean: Double = findMean(quizzes)
 
