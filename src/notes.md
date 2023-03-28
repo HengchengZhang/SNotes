@@ -237,3 +237,5 @@ ___
 2. The messy look in addQuiz in ImmutableStudent Class is actually memory efficient. Because reference the new immutable data from the original one doesn't need new memories.
 3. The immutable version is more Scala standard style.
 
+### Public Accessors and Validity Checks
+

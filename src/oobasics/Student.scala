@@ -2,9 +2,9 @@ package oobasics
 
 class Student(val firstName: String,
               val lastName: String,
-              private var quizzes: List[Int] = Nil,
-              private var assignments: List[Int] = Nil,
-              private var tests: List[Int] = Nil) {
+              private var _quizzes: List[Int] = Nil,
+              private var _assignments: List[Int] = Nil,
+              private var _tests: List[Int] = Nil) {
 
   private def findMean(results: List[Int]): Double = {
     results match {
@@ -13,15 +13,28 @@ class Student(val firstName: String,
     }
   }
 
-  def addQuiz(grade: Int): Unit = quizzes ::= grade
+  private def validGrade(grade: Int): Boolean = grade >= -20 && grade <= 120
 
-  def quizMean: Double = findMean(quizzes)
+  def addQuiz(grade: Int): Boolean = {
+    if (validGrade(grade)) {
+      _quizzes ::= grade
+      true
+    } else false
+  }
 
-  def assgnMean: Double = findMean(assignments)
+  def quizMean: Double = findMean(_quizzes)
 
-  def testMean: Double = findMean(tests)
+  def assgnMean: Double = findMean(_assignments)
+
+  def testMean: Double = findMean(_tests)
 
   def average: Double = 0.1 * quizMean + 0.5 * assgnMean + 0.4 * testMean
+
+  def quizzes = _quizzes
+
+  def assignments = _assignments
+
+  def tests = _tests
 
   override def toString: String = s"This is $firstName $lastName, the average score is ${average}"
 

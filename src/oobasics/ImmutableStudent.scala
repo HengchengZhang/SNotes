@@ -13,11 +13,15 @@ class ImmutableStudent(val firstName: String,
     }
   }
 
-  def addQuiz(grade: Int): ImmutableStudent = new ImmutableStudent(firstName,
+  private def validGrade(grade: Int): Boolean = grade >= -20 && grade <= 120
+
+  def addQuiz(grade: Int): ImmutableStudent = if (validGrade(grade))
+    new ImmutableStudent(firstName,
     lastName,
     grade :: quizzes,
     assignments,
     tests)
+  else this
 
   def quizMean: Double = findMean(quizzes)
 
