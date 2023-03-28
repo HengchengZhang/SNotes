@@ -13,7 +13,7 @@ ___
 1. The top level can only have one of the three things:
     * object
     * class
-    * tree
+    * trait
 2. It would be better to match the object name with filename.
 3. When something returns no information, use unit. Java uses void and returns actually nothing.
 
@@ -219,4 +219,15 @@ ___
 4. Before closing the file, all actions need to be finished, otherwise there will be an error.
 
 ### Named and Default Arguments
+
+### Currying and Pass-by-Name
+
+1. Currying is the ability to apply arguments one at a time.
+2. Didn't quite understand pass-by-name currently.
+
+### Object-Orientation and Classes
+
+### Instantiating Objects and Arguments as Members
+
+1. To visit attributes outside a Class, they need to be set as variables.
 

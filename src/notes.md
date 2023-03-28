@@ -227,3 +227,7 @@ ___
 
 ### Object-Orientation and Classes
 
+### Instantiating Objects and Arguments as Members
+
+1. To visit attributes outside a Class, they need to be set as variables.
+
