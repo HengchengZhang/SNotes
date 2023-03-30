@@ -1,4 +1,4 @@
-package bank.sample
+package bank_sample
 
 object BankMain {
 
