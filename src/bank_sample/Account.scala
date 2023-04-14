@@ -13,6 +13,6 @@ class Account(val customer: Customer,
 
   def showBalance: Int = _balance
 
-  override def toString: String = s"Dear customer ${customer.firstName} ${customer.lastName}, account id: $id, has a balance of $_balance."
+  override def toString: String = s"Dear customer ${customer.firstName} ${customer.lastName}, account id: ${id}, has a balance of ${_balance}."
 
 }
