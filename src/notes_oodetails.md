@@ -13,3 +13,8 @@ ___
 ### Mutable 2D Vector Class
 
 1. More scala style, but harder to read.
+
+### Scala Naming/Symbolic Names
+
+1. The naming in scala can be completely made of operation symbols like `+ - * / % | & ^(XOR) ! < > = ? $ \ :`.
+2. Or a normal name followed by `_` + operation symbols.
