@@ -10,3 +10,6 @@ ___
 2. You can still have `main` in it.
 3. Overall the `Vector2D` class is more Java style.
 
+### Mutable 2D Vector Class
+
+1. More scala style, but harder to read.
