@@ -11,19 +11,19 @@ class MutableVector2D(private var _x: Double,
 
   def setY(newY: Double): Unit = (_y = newY)
 
-  def plus(vec: MutableVector2D): MutableVector2D = {
+  def +=(vec: MutableVector2D): MutableVector2D = {
     _x += vec.x
     _y += vec.y
     this
   }
 
-  def minus(vec: MutableVector2D): MutableVector2D = {
+  def -=(vec: MutableVector2D): MutableVector2D = {
     _x -= vec.x
     _y -= vec.y
     this
   }
 
-  def scale(c: Double): MutableVector2D = {
+  def *=(c: Double): MutableVector2D = {
     _x *= c
     _y *= c
     this
@@ -35,6 +35,11 @@ class MutableVector2D(private var _x: Double,
 
 object MutableVector2D {
   def main(args: Array[String]): Unit = {
-
+    val v1 = new MutableVector2D(3, 4)
+    val v2 = new MutableVector2D(1, 1)
+    v1 += v2
+    v1 -= v2
+    v1 *= 0.5
+    println(v1.magnitude())
   }
 }

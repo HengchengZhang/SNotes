@@ -18,3 +18,6 @@ ___
 
 1. The naming in scala can be completely made of operation symbols like `+ - * / % | & ^(XOR) ! < > = ? $ \ :`.
 2. Or a normal name followed by `_` + operation symbols.
+3. The name need to have some meanings, or it's just a simply bad naming because it could be hard to read.
+4. This more flexible naming can make mathematical classes more meaningful.
+
