@@ -7,6 +7,13 @@ class Account(val customer: Customer,
 
   customer.addAccount(this)
 
+  def balance: Int = _balance
+
+  def balance_=(newBalance: Int): Unit = {
+    if (newBalance < _balance) withdraw(_balance - newBalance)
+    else deposit(newBalance - _balance)
+  }
+
   def deposit(amount: Int): Unit = if (amount >= 0) _balance += amount
 
   def withdraw(amount: Int): Unit = if (_balance - amount >= 0) _balance -= amount
@@ -15,4 +22,12 @@ class Account(val customer: Customer,
 
   override def toString: String = s"Dear customer ${customer.firstName} ${customer.lastName}, account id: ${id}, has a balance of ${_balance}."
 
+}
+
+object Account {
+  def main(args: Array[String]): Unit = {
+    val a = new Account(new Customer("John", "Smith", "id", new Address(Nil)), "id")
+    a.balance = 700
+    a.balance += 40
+  }
 }

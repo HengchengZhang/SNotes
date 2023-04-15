@@ -41,3 +41,8 @@ from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&
 
 1. Everything ends in `:` is right associative.
 
+### Property Assignment Methods
+
+1. If a method is named by `name` + `_` + `=`, then it can be used by dot notation.
+2. When scala sees a `+=`, firstly it checks if there is a `+=` method. If there is not, it will read the `+=` as `* = * + *`.
+

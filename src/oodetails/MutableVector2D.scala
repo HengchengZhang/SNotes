@@ -7,9 +7,9 @@ class MutableVector2D(private var _x: Double,
 
   def y = _y
 
-  def setX(newX: Double): Unit = (_x = newX)
+  def x_=(newX: Double): Unit = (_x = newX)
 
-  def setY(newY: Double): Unit = (_y = newY)
+  def y_=(newY: Double): Unit = (_y = newY)
 
   def +=(vec: MutableVector2D): MutableVector2D = {
     _x += vec.x
@@ -41,5 +41,7 @@ object MutableVector2D {
     v1 -= v2
     v1 *= 0.5
     println(v1.magnitude())
+    v1.x = 5
+    v1.y = 6
   }
 }
