@@ -24,7 +24,7 @@ ___
    * val
    * var
 2. The difference between val and var the ability to make assignments. val is a finial assignment and cant be reassigned with other values while var can.
-3. THerefore val is preferred to simplify the logic.
+3. Therefore, val is preferred to simplify the logic.
 4. A variable can just be simply declared or defined type.
 5. Some basic types in scala: Int, Double, Char, Sting, Boolean, Unit.
 6. Tuple starts at one instead of zero.
@@ -33,7 +33,7 @@ ___
 
 ### Statements and Expressions
 
-1. Some binary oprations can use inline commands
+1. Some binary operations can use inline commands
    ```scala
    val a:Int = 1
    var b:Int = 2
@@ -41,8 +41,8 @@ ___
    a.min(b)
    a min b
    ```
-2. In this case, operations with letters("min") have lower precesion than other operations("+").
-3. In Java we need .equal() method to compare equivalence and == only compares identity, but == in scala is same as .equal().
+2. In this case, operations with letters("min") have lower precedence than other operations("+").
+3. In Java, we need .equal() method to compare equivalence and == only compares identity, but == in scala is same as .equal().
 
 ### Lambda Expressions
 
@@ -58,7 +58,7 @@ ___
 2. "to" is inclusive at the highend, "until" is exclusive at the highend.
 3. Conditions can be added in for loops.
 
-### Match Expresstion
+### Match Expression
 
 1. Just like Haskell
 
@@ -71,7 +71,7 @@ ___
 ### Arrays and Lists
 
 1. Array is mutable and List is not. This means the items in Arrays can be modified(not reassigned) and List is final.
-2. When you add a new item to a List, the original List wont change, instead you will get a new List with the item added.
+2. When you add a new item to a List, the original List won't change, instead you will get a new List with the item added.
    ```scala
    List[Char] = List(a, b, c)
    Array[Int] = Array(1, 2, 3)
@@ -176,7 +176,7 @@ ___
 ### Strings as Collections
 
 1. Of course String can usually(always?) be treated as a collection of Chars.
-2. String can also be splitted by RegEx(Yeah that's what we want).
+2. String can also be split by RegEx(Yeah that's what we want).
 
 ### Lists, Recursion and Patterns
 
