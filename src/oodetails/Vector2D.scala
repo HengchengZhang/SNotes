@@ -15,6 +15,14 @@ class Vector2D(val x: Double,
 
   private def unary_-(): Vector2D = new Vector2D(-x, -y)
 
+  def apply(idx: Int): Double = {
+    idx match {
+      case 0 => x
+      case 1 => y
+      case _ => throw new IndexOutOfBoundsException(s"The 2D vector ${this.toString} has no index ${idx}.")
+    }
+  }
+
   override def toString: String = s"($x, $y)"
 
 }
@@ -28,5 +36,6 @@ object Vector2D {
     println(v1.scale(0.5))
     println(v2.magnitude())
     println(-v2)
+    v1(0)
   }
 }

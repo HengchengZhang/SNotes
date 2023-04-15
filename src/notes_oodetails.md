@@ -46,3 +46,28 @@ from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&
 1. If a method is named by `name` + `_` + `=`, then it can be used by dot notation.
 2. When scala sees a `+=`, firstly it checks if there is a `+=` method. If there is not, it will read the `+=` as `* = * + *`.
 
+### The apply Method
+
+1. First are some examples
+   ```scala
+   // These two are equivalent
+   Array(1, 2, 3)
+   Array.apply(1, 2, 3)
+   
+   val a = Array(1, 2, 3)
+   // These two are equivalent
+   a(0)
+   a.apply(0)
+   ```
+2. Everytime you got a [singleton object](https://docs.scala-lang.org/tour/singleton-objects.html) or an [instance object](https://en.wikibooks.org/wiki/Scala/Objects#:~:text=In%20Scala%2C%20an%20object%20is,covered%20under%20Scala%2FAccess%20modifiers.) followed by parentheses, it can be expanded out as an apply method.
+3. Here is another example
+   ```scala
+   val f(): Double = math.random()
+   // These are valid
+   f()
+   f.apply()
+   // Even work when the parentheses is missing
+   f.apply
+   // This is giving back the function itself
+   f
+   ```

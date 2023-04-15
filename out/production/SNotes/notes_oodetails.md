@@ -17,7 +17,7 @@ from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&
 
 ### Scala Naming/Symbolic Names
 
-1. The naming in scala can be completely made of operation symbols like `+ - * / % | & ^(XOR) ! < > = ? $ \ :`.
+1. The naming in scala can be completely made of operation symbols like `+ - * / % | & ^(XOR) ! < > = ? $ \ : ~`.
 2. Or a normal name followed by `_` + operation symbols.
 3. The name need to have some meanings, or it's just a simply bad naming because it could be hard to read.
 4. This more flexible naming can make mathematical classes more meaningful.
@@ -29,7 +29,7 @@ from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&
     * Other special characters
     * `* / %`
     * `+ -`
-    * `:`(use to jion lists)
+    * `:`(use to join lists)
     * `= !`
     * `< >`
     * `&`
@@ -40,4 +40,12 @@ from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&
 ### Associativity and Unary Operators
 
 1. Everything ends in `:` is right associative.
-2. 
+
+### Property Assignment Methods
+
+1. If a method is named by `name` + `_` + `=`, then it can be used by dot notation.
+2. When scala sees a `+=`, firstly it checks if there is a `+=` method. If there is not, it will read the `+=` as `* = * + *`.
+
+### The apply Method
+
+1. 
