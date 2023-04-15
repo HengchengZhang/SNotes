@@ -13,6 +13,8 @@ class Vector2D(val x: Double,
 
   def magnitude(): Double = math.sqrt(x * x + y * y)
 
+  private def unary_-(): Vector2D = new Vector2D(-x, -y)
+
   override def toString: String = s"($x, $y)"
 
 }
@@ -25,5 +27,6 @@ object Vector2D {
     println(v1.subtraction(v2))
     println(v1.scale(0.5))
     println(v2.magnitude())
+    println(-v2)
   }
 }
