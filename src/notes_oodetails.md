@@ -2,7 +2,9 @@
 
 ___
 
-*The lectures come from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&list=PLLMXbkbDbVt8JLumqKj-3BlHmEXPIfR42&index=1)* (Video 1 - 27)
+*The lectures come
+from [Mark Lewis's YouTube Channel](https://www.youtube.com/watch?v=85bHg5AipvU&list=PLLMXbkbDbVt8JLumqKj-3BlHmEXPIfR42&index=1)* (
+Video 1 - 27)
 
 ### 2D Vector Class
 
@@ -21,3 +23,17 @@ ___
 3. The name need to have some meanings, or it's just a simply bad naming because it could be hard to read.
 4. This more flexible naming can make mathematical classes more meaningful.
 
+### Precedence
+
+1. The first character in the method's name determine the precedence.
+2. The precedence from high to low looks like
+    * Other special characters
+    * `* / %`
+    * `+ -`
+    * `:`(use to jion lists)
+    * `= !`
+    * `< >`
+    * `&`
+    * `|`
+    * All letters
+    * Assignment operators (like `+=`)
